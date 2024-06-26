@@ -7,6 +7,15 @@ document.getElementById('deobfuscateForm').addEventListener('submit', function(e
     document.getElementById('deobfuscatedScript').textContent = deobfuscatedScript || 'Failed to deobfuscate the script.';
 });
 
+document.getElementById('copyButton').addEventListener('click', function() {
+    const decryptedScript = document.getElementById('deobfuscatedScript').textContent;
+    navigator.clipboard.writeText(decryptedScript).then(() => {
+        alert('Copied to clipboard!');
+    }, () => {
+        alert('Failed to copy!');
+    });
+});
+
 function deobfuscateScript(obfuscatedScript) {
     try {
         const encodedPattern = /local \w+ = \{\s*([^}]+)\s*\}/;
