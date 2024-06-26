@@ -2,21 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0a0e17;
+    color: #ffffff;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #161b22;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
 }
 
 form {
@@ -27,6 +29,7 @@ form {
 label {
     margin-bottom: 10px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 textarea {
@@ -36,12 +39,14 @@ textarea {
     font-family: monospace;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #0e1117;
+    color: #ffffff;
 }
 
 button {
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00bfa6;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -49,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #00a893;
 }
 
 #result {
@@ -58,9 +63,20 @@ button:hover {
 
 pre {
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #0e1117;
     border: 1px solid #ccc;
     border-radius: 4px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    color: #ffffff;
+}
+
+#copyButton {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#copyButton:hover {
+    background-color: #0056b3;
 }
