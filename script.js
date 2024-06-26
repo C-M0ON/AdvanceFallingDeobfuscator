@@ -43,6 +43,5 @@ function deobfuscateScript(obfuscatedScript) {
 }
 
 function formatLuaScript(script) {
-    // Assuming a simple formatting for demonstration purposes
     return script.replace(/;/g, ';\n');
 }
